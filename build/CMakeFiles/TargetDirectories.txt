@@ -1,0 +1,3 @@
+H:/Laboratory project/Test Project/simpleShow/build/CMakeFiles/testKinect1.dir
+H:/Laboratory project/Test Project/simpleShow/build/CMakeFiles/ALL_BUILD.dir
+H:/Laboratory project/Test Project/simpleShow/build/CMakeFiles/ZERO_CHECK.dir

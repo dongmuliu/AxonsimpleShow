@@ -1,0 +1,19 @@
+﻿生成启动时间为 2019/3/29/星期五 20:17:54。
+     1>项目“H:\Laboratory project\Test Project\simpleShow\build\testKinect1.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule H:/Laboratory project/Test Project/simpleShow/src/CMakeLists.txt
+         CMake does not need to re-run because H:\Laboratory project\Test Project\simpleShow\build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"H:\Laboratory project\Test Project\simpleShow\src\include" /ID:\OpenCV2.4\opencv\build\include /ID:\OpenCV2.4\opencv\build\include\opencv /Zi /nologo /W1 /WX- /Od /Ob0 /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"testKinect1.dir\Debug\\" /Fd"testKinect1.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt  -O3 -std=c++11 "H:\Laboratory project\Test Project\simpleShow\src\Testmain.cpp"
+     1>cl : 命令行 warning D9002: 忽略未知选项“-O3”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+         Testmain.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Laboratory project\Test Project\simpleShow\src\bin\Debug\testKinect1.exe" /INCREMENTAL /NOLOGO /LIBPATH:/lib /LIBPATH:/lib/Debug kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib OpenNI2.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib comctl32.lib gdi32.lib ole32.lib setupapi.lib ws2_32.lib vfw32.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:/Laboratory project/Test Project/simpleShow/src/bin/Debug/testKinect1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:/Laboratory project/Test Project/simpleShow/src/bin/Debug/testKinect1.lib" /MACHINE:X64  /machine:x64 /debug testKinect1.dir\Debug\Testmain.obj
+         testKinect1.vcxproj -> H:\Laboratory project\Test Project\simpleShow\src\bin\Debug\testKinect1.exe
+     1>已完成生成项目“H:\Laboratory project\Test Project\simpleShow\build\testKinect1.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.23
