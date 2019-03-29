@@ -1,16 +1,28 @@
-CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
-PROJECT( testKinect1 )
-SET( CMAKE_CXX_COMPILER "g++" )
-SET( CMAKE_BUILD_TYPE Release )
-SET( CMAKE_CXX_FLAGS "-O3 -std=c++11" )
-SET( EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin )
-SET( LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib )
-INCLUDE_DIRECTORIES( ${PROJECT_SOURCE_DIR}/include ${OPENNI2_INCLUDE} ${OPENNI2_REDIST} 
-)
-LINK_DIRECTORIES( $ENV{PROJECT_SOURCE_DIR}/lib )
-#ADD_SUBDIRECTORY( $ENV{PROJECT_SOURCE_DIR}/src )
-find_package(OpenCV REQUIRED)
+cmake_minimum_required(VERSION 2.8)  
+project( TestOpenNI )  
 
-add_executable(${PROJECT_NAME} "Testmain.cpp")
+find_package( OpenCV REQUIRED )  
+include_directories( ${OpenCV_INCLUDE_DIRS} )  
+MESSAGE(STATUS "The Opencv's include directory is:" ${OpenCV_INCLUDE_DIRS})  
 
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} OpenNI2 )
+FIND_PATH(OpenNI2_INCLUDE_DIRS OpenNI.h HINTS  $ENV{OPENNI2_INCLUDE} PATH_SUFFIXES openni2)  
+FIND_LIBRARY(OpenNI2_LIBRARY NAMES OpenNI2 HINTS  $ENV{OPENNI2_LIB} $ENV{OPENNI2_REDIST})  
+include_directories( ${OpenNI2_INCLUDE_DIRS} )  
+  
+  
+IF (OpenNI2_INCLUDE_DIRS AND OpenNI2_LIBRARY)  
+   SET(OpenNI2_FOUND TRUE)  
+ENDIF (OpenNI2_INCLUDE_DIRS AND OpenNI2_LIBRARY)  
+  
+IF (OpenNI2_FOUND)  
+   # show which OpenNI2 was found only if not quiet  
+   SET(OpenNI2_LIBRARIES ${OpenNI2_LIBRARY})  
+   MESSAGE(STATUS "Found OpenNI2: ${OpenNI2_LIBRARIES}")  
+ELSE (OpenNI2_FOUND)  
+   # fatal error if OpenNI2 is required but not found  
+   IF (OpenNI2_FIND_REQUIRED)  
+      MESSAGE(FATAL_ERROR "Could not find OpenNI2. Environment variables OPENNI2_INCLUDE (directory containing OpenNI.h) and OPENNI2_LIB (directory containing OpenNI2 library) could bet set.")  
+   ENDIF (OpenNI2_FIND_REQUIRED)  
+ENDIF (OpenNI2_FOUND)  
+add_executable(TestOpenNI main.cpp)  
+target_link_libraries(TestOpenNI ${OpenNI2_LIBRARIES} ${OpenCV_LIBS} )  

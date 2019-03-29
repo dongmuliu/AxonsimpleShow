@@ -19,32 +19,32 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{38F7A17B-EB10-4CEA-B463-4CBCCE77BA14}</ProjectGUID>
+    <ProjectGUID>{61487B34-F844-4B10-ADAC-525A17D6CAED}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
-    <ProjectName>ALL_BUILD</ProjectName>
+    <ProjectName>TestOpenNI</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
@@ -58,12 +58,52 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Laboratory project\Test Project\simpleShow\build\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TestOpenNI.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TestOpenNI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Laboratory project\Test Project\simpleShow\build\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TestOpenNI.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TestOpenNI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Laboratory project\Test Project\simpleShow\build\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TestOpenNI.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TestOpenNI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Laboratory project\Test Project\simpleShow\build\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TestOpenNI.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TestOpenNI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
       <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -72,8 +112,41 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\PCL 1.8.0\OpenNI2\Lib\OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Laboratory project/Test Project/simpleShow/build/Debug/TestOpenNI.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Laboratory project/Test Project/simpleShow/build/Debug/TestOpenNI.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
       <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -82,8 +155,41 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\PCL 1.8.0\OpenNI2\Lib\OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Laboratory project/Test Project/simpleShow/build/Release/TestOpenNI.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Laboratory project/Test Project/simpleShow/build/Release/TestOpenNI.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
       <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -92,8 +198,41 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\PCL 1.8.0\OpenNI2\Lib\OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Laboratory project/Test Project/simpleShow/build/MinSizeRel/TestOpenNI.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Laboratory project/Test Project/simpleShow/build/MinSizeRel/TestOpenNI.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
       <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -102,6 +241,20 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\PCL 1.8.0\OpenNI2\Lib\OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Laboratory project/Test Project/simpleShow/build/RelWithDebInfo/TestOpenNI.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Laboratory project/Test Project/simpleShow/build/RelWithDebInfo/TestOpenNI.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="H:\Laboratory project\Test Project\simpleShow\src\CMakeLists.txt">
@@ -160,11 +313,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="H:\Laboratory project\Test Project\simpleShow\src\main.cpp"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="H:/Laboratory project/Test Project/simpleShow/build/TestOpenNI.vcxproj">
-      <Project>61487B34-F844-4B10-ADAC-525A17D6CAED</Project>
-    </ProjectReference>
     <ProjectReference Include="H:/Laboratory project/Test Project/simpleShow/build/ZERO_CHECK.vcxproj">
       <Project>9C3701F3-58E6-4768-A060-791F5F570D75</Project>
     </ProjectReference>
