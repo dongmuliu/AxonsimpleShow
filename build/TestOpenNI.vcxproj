@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{61487B34-F844-4B10-ADAC-525A17D6CAED}</ProjectGUID>
+    <ProjectGUID>{CFACBE00-FBC1-4B47-A535-3BB1A6ABF19D}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>TestOpenNI</ProjectName>
@@ -85,7 +85,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -102,10 +102,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,7 +114,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\PCL 1.8.0\OpenNI2\Lib\OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -145,10 +145,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,7 +157,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\PCL 1.8.0\OpenNI2\Lib\OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -172,7 +172,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -188,10 +188,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -200,7 +200,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\PCL 1.8.0\OpenNI2\Lib\OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -215,7 +215,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -231,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;F:\PCL 1.8.0\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCV2.4\opencv\build\include;D:\OpenCV2.4\opencv\build\include\opencv;E:\AXON_Release_20180814\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -243,7 +243,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\PCL 1.8.0\OpenNI2\Lib\OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenNI2.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_videostab2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ts2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_superres2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_stitching2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_contrib2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_nonfree2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ocl2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_gpu2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_photo2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_objdetect2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_legacy2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_video2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_ml2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_calib3d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_features2d2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_highgui2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_flann2413d.lib;D:\OpenCV2.4\opencv\build\x64\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -317,7 +317,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="H:/Laboratory project/Test Project/simpleShow/build/ZERO_CHECK.vcxproj">
-      <Project>9C3701F3-58E6-4768-A060-791F5F570D75</Project>
+      <Project>B752853E-C7D3-4FA7-98A1-49327869EF69</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
