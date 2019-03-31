@@ -14,7 +14,7 @@
 
 # Reference
 
-**公司网站**http://www.axontech.cn/cn/single/service.htm?menuid=35
+**公司网站** http://www.axontech.cn/cn/single/service.htm?menuid=35
 
-**文档参考**https://blog.csdn.net/u013294888/article/details/51244736
+**文档参考** https://blog.csdn.net/u013294888/article/details/51244736
 
