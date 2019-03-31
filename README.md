@@ -13,6 +13,8 @@
 **CMakeLists(指定)** 适用于window平台下的OpenNI2 (使用时指定库的路径)
 
 # Reference
-http://www.axontech.cn/cn/single/service.htm?menuid=35
-https://blog.csdn.net/u013294888/article/details/51244736
+
+**公司网站**http://www.axontech.cn/cn/single/service.htm?menuid=35
+
+**文档参考**https://blog.csdn.net/u013294888/article/details/51244736
 
